@@ -67,7 +67,7 @@ else:
         exit()
     id = match[1]
 start = range(0, args.limit, 15)
-urls = (f'https://{args.mode}.douban.com/people/{id}/collect?'
+urls = (f'https://{args.mode}.douban.com/people/{id}/wish?'
         f'start={x}&sort={"time" if args.sort_by_time else "rating"}'
         f'&rating={"all" if args.rating<1 or args.rating>5 else args.rating}'
         f'&filter=all&mode=grid&tags_sort=count'
