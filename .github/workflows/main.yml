@@ -2,9 +2,9 @@ name: main
 
 on:
   # Uncomment line 5 and line 6 to activate scheduled run.
-schedule:
-   - cron: '0 6 * * 6' # Time
-   workflow_dispatch: 
+  schedule:
+    - cron: '0 14 * * 6' # Time
+run-name: main
 
 jobs:
   build:
